@@ -10,11 +10,11 @@ import { ProgressBar } from "../App";
 import { GiBoomerangCross } from "react-icons/gi";
 const Menu = () => {
   const menuList = [
-    { icon: <MdOutlineDashboard size={45} color="white" />, name: "Dashboard" },
-    { icon: <SiSimpleanalytics size={45} color="white" />, name: "Analytics" },
-    { icon: <FaGlobeAfrica size={45} color="white" />, name: "Connect" },
-    { icon: <FaRegBell size={45} color="white" />, name: "Activity" },
-    { icon: <GiBoomerangCross size={45} color="white" />, name: "Dealroom" },
+    { icon: <MdOutlineDashboard size={20} color="white" />, name: "Dashboard" },
+    { icon: <SiSimpleanalytics size={20} color="white" />, name: "Analytics" },
+    { icon: <FaGlobeAfrica size={20} color="white" />, name: "Connect" },
+    { icon: <FaRegBell size={20} color="white" />, name: "Activity" },
+    { icon: <GiBoomerangCross size={20} color="white" />, name: "Dealroom" },
   ];
 
   return (
@@ -61,7 +61,7 @@ const Body = () => {
             );
           })}
         </div>
-        <div className="bg-black pt-10">
+        <div className="bg-black pt-5">
           {activeTab === "Overview" && (
             <div className="flex flex-col gap-4 p-7">
               <div className="flex items-center gap-3 bg-black p-4 rounded-[10px] w-[100%] border border-solid border-[#1D1D1D]">
@@ -89,7 +89,7 @@ const Body = () => {
                       </span>
                     </div>
                   </div>
-                  <Chart width={500} height={200} />
+                  <Chart width={300} height={200} />
                 </div>
               </div>
               <div className="flex flex-col gap-4 w-[100%] p-5 bg-black rounded-[10px] border border-solid border-[#1D1D1D]">
@@ -109,10 +109,10 @@ const Body = () => {
                     <div className="flex items-stretch gap-3">
                       <h1 className="text-white font-bold text-[30px]">7.4k</h1>
                       <div className="flex flex-col justify-center gap-1">
-                        <span className="text-green-700 text-[13px]">
+                        <span className="text-green-700 text-[11px]">
                           +000%
                         </span>
-                        <span className="text-white text-[13px] text-gray-500">
+                        <span className="text-white text-[11px] text-gray-500">
                           (000)
                         </span>
                       </div>
@@ -125,10 +125,10 @@ const Body = () => {
                         6.09k
                       </h1>
                       <div className="flex flex-col justify-center gap-1">
-                        <span className="text-green-700 text-[13px]">
+                        <span className="text-green-700 text-[11px]">
                           +000%
                         </span>
-                        <span className="text-white text-[13px] text-gray-500">
+                        <span className="text-white text-[11px] text-gray-500">
                           (000)
                         </span>
                       </div>
@@ -148,7 +148,7 @@ const Body = () => {
                   <h1 className="text-[25px] font-light text-white">
                     Demographics
                   </h1>
-                  <Chart width={500} height={200} />
+                  <Chart width={300} height={200} />
                 </div>
                 <div className="flex flex-col w-[100%] gap-3">
                   <ProgressBar
