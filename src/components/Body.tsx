@@ -43,7 +43,7 @@ const Body = () => {
   };
   return (
     <>
-      <div className="bg-black mt-[100px] flex flex-col md:hidden pt-7">
+      <div className="bg-black mt-[100px] mb-[98px] flex flex-col md:hidden pt-7">
         <div className="flex fixed top-[80px] pt-5 border-solid border-b-2 border-b-[#1d1d1d] bg-black z-50 left-0 right-0 items-center justify-between px-7">
           {tabs.map(({ name }, index) => {
             return (
