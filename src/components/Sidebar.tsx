@@ -1,17 +1,20 @@
-// import React from "react";
 import { Plus } from "lucide-react";
 import image from "../../public/portfolio-pic.jpg";
-
-
+import { useState } from "react";
+import { Link } from "react-router-dom";
 const menu = [
-  { title: "Dashboard" },
-  { title: "Analytics" },
-  { title: "Connect" },
-  { title: "Dealroom" },
-  { title: "Profile" },
-  { title: "Settings" },
+  { title: "Dashboard" ,url:"/Analytics"},
+  { title: "Analytics",url:"/Analytics" },
+  { title: "Connect",url: "/Analytics" },
+  { title: "Dealroom",url: "/Analytics" },
+  { title: "Profile" ,url: "/Profile"},
+  { title: "Settings" , url: ""},
 ];
 const Sidebar = () => {
+  const [activeTab,setActiveTab] = useState("Dashboard");
+  const handleActiveState = (value: string) => {
+       setActiveTab(value);
+  }
   return (
     <div className="fixed border-solid border-r border-r-[#1d1d1d] bg-black bottom-0 top-0 left-0 w-[300px] hidden md:flex flex-col">
       <div className="flex gap-5 items-center p-2 border-b border-b-[#1d1d1d] border-solid">
@@ -42,23 +45,19 @@ const Sidebar = () => {
           </div>
         </div>{" "}
         <div className="flex pt-5 flex-col gap-3 w-full border-l border-solid border-l-[#1d1d1d] ">
-          {menu.map(({ title }, index) => {
+          {menu.map(({ title,url }, index) => {
             return (
-              <div
+              <Link to={url}
                 key={index}
-                className="flex items-center gap-2 px-4 py-2 hover:bg-[#1d1d1d] cursor-pointer"
+                onClick={() => handleActiveState(title)}
+                className={`flex items-center gap-2 px-4 py-2 cursor-pointer ${activeTab === title ? "text-white" :"text-gray-600"}`}
               >
-                <div className="text-white">{title}</div>
-              </div>
+                {title}
+              </Link>
             );
           })}
         </div>
       </div>
-      {/* <div className="p-6">
-          <button className="w-8 h-8 rounded-full bg-[#1d1d1d] flex items-center justify-center">
-            <Plus className="h-4 w-4" />
-          </button>
-        </div> */}
     </div>
   );
 };

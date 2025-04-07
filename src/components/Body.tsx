@@ -2,13 +2,13 @@ import { useState } from "react";
 import { IoMdArrowDropdown, IoMdAdd } from "react-icons/io";
 import { MdOutlineDashboard } from "react-icons/md";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Chart } from "../App";
+import { Chart } from "./BodyDesktop";
 import { SiSimpleanalytics } from "react-icons/si";
 import { FaGlobeAfrica } from "react-icons/fa";
 import { FaRegBell } from "react-icons/fa";
-import { ProgressBar } from "../App";
+import { ProgressBar } from "./BodyDesktop";
 import { GiBoomerangCross } from "react-icons/gi";
-const Menu = () => {
+export const Menu = () => {
   const menuList = [
     { icon: <MdOutlineDashboard size={20} color="white" />, name: "Dashboard" },
     { icon: <SiSimpleanalytics size={20} color="white" />, name: "Analytics" },
@@ -30,6 +30,8 @@ const Menu = () => {
     </div>
   );
 };
+
+// const Tabs = () => {}
 const Body = () => {
   const tabs = [
     { name: "Overview" },
@@ -43,7 +45,7 @@ const Body = () => {
   };
   return (
     <>
-      <div className="bg-black mt-[100px] mb-[98px] flex flex-col md:hidden pt-7">
+      <div className="bg-black mt-[100px] pb-20 flex flex-col md:hidden pt-7">
         <div className="flex fixed top-[80px] pt-5 border-solid border-b-2 border-b-[#1d1d1d] bg-black z-50 left-0 right-0 items-center justify-between px-6">
           {tabs.map(({ name }, index) => {
             return (
