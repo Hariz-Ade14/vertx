@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import Layout from "./Layout";
 import { Link } from "react-router-dom";
-import { CheckCircle, Linkedin, Mail } from "lucide-react";
+import { CheckCircle} from "lucide-react";
 import { Menu } from "./Body";
 import { FaLinkedinIn } from "react-icons/fa6";
 const Profile = () => {

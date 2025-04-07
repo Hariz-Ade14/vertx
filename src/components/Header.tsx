@@ -1,6 +1,5 @@
 import image from "../../public/portfolio-pic.jpg";
 import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
 
 const Header = () => {
   // const path = useLocation();
