@@ -23,7 +23,7 @@ const Menu = () => {
         return (
           <div className="flex flex-col text-white gap-1 items-center">
             {icon}
-           <span className="text-[7px]">{name}</span> 
+            <span className="text-[9px]">{name}</span>
           </div>
         );
       })}
@@ -44,7 +44,7 @@ const Body = () => {
   return (
     <>
       <div className="bg-black mt-[100px] mb-[98px] flex flex-col md:hidden pt-7">
-        <div className="flex fixed top-[80px] pt-5 border-solid border-b-2 border-b-[#1d1d1d] bg-black z-50 left-0 right-0 items-center justify-between px-7">
+        <div className="flex fixed top-[80px] pt-5 border-solid border-b-2 border-b-[#1d1d1d] bg-black z-50 left-0 right-0 items-center justify-between px-6">
           {tabs.map(({ name }, index) => {
             return (
               <div
@@ -63,7 +63,7 @@ const Body = () => {
         </div>
         <div className="bg-black pt-5">
           {activeTab === "Overview" && (
-            <div className="flex flex-col gap-4 p-7">
+            <div className="flex flex-col gap-4 p-6">
               <div className="flex items-center gap-3 bg-black p-4 rounded-[10px] w-[100%] border border-solid border-[#1D1D1D]">
                 <div className="bg-black  w-[100%] flex flex-col gap-4 rounded-[20px] gap-3">
                   <div className="flex gap-2">
