@@ -23,7 +23,7 @@ const Menu = () => {
         return (
           <div className="flex flex-col text-white gap-1 items-center">
             {icon}
-            {name}
+           <span className="text-[10px]">{name}</span> 
           </div>
         );
       })}
