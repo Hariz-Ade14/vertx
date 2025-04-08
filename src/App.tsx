@@ -9,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/Analytics" element={<BodyDesktop/>} />
         <Route path="/" element={<BodyDesktop/>} />
-        <Route path="/profile" element={<Profile/>} />
+        <Route path="/Profile" element={<Profile/>} />
       </Routes>
     </BrowserRouter>
   )
