@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Layout from "./Layout";
 import { Link } from "react-router-dom";
-import { CheckCircle} from "lucide-react";
+import { FaCheckCircle } from "react-icons/fa";
 import { Menu } from "./Body";
 import { FaLinkedinIn } from "react-icons/fa6";
 const Profile = () => {
@@ -34,7 +34,7 @@ const Profile = () => {
           );
         })}
       </div>
-      <div className="md:flex md:left-[300px] top-[113px] absolute left-0 flex bg-black/95 px-10 right-0 pt-10 pb-20 flex-col gap-3">
+      <div className="md:flex md:left-[300px] top-[113px] absolute left-0 flex bg-black/95 px-6 right-0 pt-10 pb-20 flex-col gap-3">
         <h1 className="font-semibold text-[30px] text-white">Overview</h1>
         <div className="min-h-screen text-white">
           <div className="bg-[#080808] rounded-xl p-6 mb-8 border border-[#1d1d1d]">
@@ -61,9 +61,9 @@ const Profile = () => {
 
               {/* Profile Info */}
               <div className="flex-1 text-center md:text-left">
-                <div className="flex items-centerjustify-start md:justify-start gap-2 mb-1">
+                <div className="flex items-center justify-between md:justify-between w-[60%] md:w-[35%] gap-2 mb-1">
                   <h2 className="text-3xl  font-bold">Mr A</h2>
-                  <CheckCircle className="w-5 h-5 text-[#579560] fill-[#579560]" />
+                  <FaCheckCircle className="w-5 h-5 fill-blue-500" />
                 </div>
 
                 <div className="flex items-start md:items-center justify-start md:justify-start gap-1 mb-4">
@@ -121,39 +121,38 @@ const Profile = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
                     <h4 className="font-bold">Vertx</h4>
-                    <span className="px-2 py-0.5 bg-green-400 text-black text-xs rounded">
+                    <span className="md:px-2 px-1 py-0.5 bg-green-400 text-black sm:text-xs text-[8px] rounded">
                       CEO
                     </span>
                   </div>
-                  <p className="text-sm text-white">
+                  <p className="text-[9px] whitespace-nowrap md:text-sm text-white">
                     Founded in 2025, in{" "}
                     <span className="font-medium">Fintech</span>.
                   </p>
                 </div>
-                <Link to="#" className="text-sm text-white hover:text-white">
+                <Link to="#" className="text-xs md:text-sm text-white hover:text-white">
                   View Profile
                 </Link>
               </div>
 
-              {/* Company 2 */}
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 pb-6">
                 <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
                   <span className="text-black text-xl">▼</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-bold">Company</h4>
-                    <span className="px-2 py-0.5 bg-blue-300 text-black text-xs rounded">
-                      PROPRIETOR
+                    <h4 className="font-bold">Comp 1</h4>
+                    <span className="md:px-2 px-1 py-0.5 bg-blue-300 text-black md:text-xs text-[8px] rounded">
+                        PROPRIETOR
                     </span>
                   </div>
-                  <p className="text-sm text-white">
+                  <p className="text-[9px] whitespace-nowrap md:text-sm text-white">
                     Details/information
                     <br />
                     like acquired /exit/m&a
                   </p>
                 </div>
-                <Link to="#" className="text-sm text-white hover:text-white">
+                <Link to="#" className="md:text-sm text-xs text-white hover:text-white">
                   View Profile
                 </Link>
               </div>
