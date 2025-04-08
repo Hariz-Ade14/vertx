@@ -1,4 +1,4 @@
-import image from "../../public/portfolio-pic.jpg";
+import image from "/logo.svg";
 import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
 
 const Header = () => {
