@@ -81,7 +81,7 @@ const Profile = () => {
                     </span>
                   </div>
 
-                  <div className="md:px-2 px-1 py-1 bg-white md:mt-2 w-[35%] md:w-[11.8%] text-black md:text-xs text-[9px] rounded-[4px]">
+                  <div className="md:px-2 px-1.5 py-1 bg-white md:mt-2 w-[35%] md:w-[11.8%] text-black md:text-xs text-[9px] rounded-[4px]">
                     <span className="">Entrepreneur</span>
                   </div>
                 </div>
