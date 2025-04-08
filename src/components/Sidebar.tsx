@@ -3,11 +3,11 @@ import image from "/logo.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const menu = [
-  { title: "Dashboard", url: "/Analytics" },
-  { title: "Analytics", url: "/Analytics" },
-  { title: "Connect", url: "/Analytics" },
-  { title: "Dealroom", url: "/Analytics" },
-  { title: "Profile", url: "/Profile" },
+  { title: "Dashboard", url: "" },
+  { title: "Analytics", url: "/analytics" },
+  { title: "Connect", url: "" },
+  { title: "Dealroom", url: "" },
+  { title: "Profile", url: "/profile" },
   { title: "Settings", url: "" },
 ];
 const Sidebar = () => {
@@ -37,11 +37,11 @@ const Sidebar = () => {
           <div className="flex flex-col">
             <div className="border-solid relative w-full border-b border-b-[#1d1d1d]">
               <div className="bg-white rounded-[50%] h-10 w-10 flex mx-auto my-2"></div>
-              {pathName === "Profile" && (
+              {pathName === "profile" && (
                 <div className="bg-green-500 h-[10px] w-[10px] absolute right-2.5 bottom-2 rounded-[50%]"></div>
               )}
             </div>
-            {pathName === "Profile" && (
+            {pathName === "profile" && (
               <div className="flex flex-col gap">
                 <div className="border-solid relative w-full border-b border-b-[#1d1d1d]">
                   <div className="bg-white rounded-[50%] h-10 w-10 flex mx-auto my-2"></div>

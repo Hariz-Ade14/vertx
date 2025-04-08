@@ -4,7 +4,7 @@ import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
 const Header = () => {
   // const path = useLocation();
   const path = window.location.pathname;
-  const pathName = path.slice(1);
+  const pathName = path.slice(1).charAt(0).toUpperCase() + path.slice(2);
   return (
     // <Router>
     <div>
@@ -19,7 +19,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex items-center text-white justify-between border-solid border-b border-b-[#1d1d1d]">
-            {pathName === "Analytics" && (
+            {pathName === "analytics" || pathName === "/" && (
               <div className="flex">
                 <p className="p-4 border-solid">Overview</p>
                 <p className="p-4 border-solid border-l border-l-[#1d1d1d]">
@@ -27,7 +27,7 @@ const Header = () => {
                 </p>
               </div>
             )}
-            {pathName === "Profile" && (
+            {pathName === "profile" && (
               <div  className="flex">
                 <p className="p-4 border-solid">Overview</p>
                 <p className="p-4 border-solid border-l border-l-[#1d1d1d]">
