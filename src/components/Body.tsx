@@ -52,7 +52,7 @@ const Body = () => {
               <div
                 key={index}
                 onClick={() => handleActiveTab(name)}
-                className={`text-[80%] text-white px-4 py-2 ${
+                className={`text-[80%] cursor-pointer text-white px-4 py-2 ${
                   activeTab === name
                     ? "border-solid border-b-2 border-b-white"
                     : "border-none"
@@ -64,7 +64,7 @@ const Body = () => {
           })}
         </div>
         <div className="bg-black pt-5">
-          {activeTab === "Overview" && (
+          {/* {activeTab === "Overview" && ( */}
             <div className="flex flex-col gap-4 p-6">
               <div className="flex items-center gap-3 bg-black p-4 rounded-[10px] w-[100%] border border-solid border-[#1D1D1D]">
                 <div className="bg-black  w-[100%] flex flex-col gap-4 rounded-[20px] gap-3">
@@ -180,7 +180,7 @@ const Body = () => {
                 </div>
               </div>
             </div>
-          )}
+          {/* )} */}
         </div>
       </div>
 
