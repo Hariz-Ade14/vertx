@@ -184,18 +184,7 @@ const Body = () => {
         </div>
       </div>
 
-      {/* <div className="bg-black w-[100%] items-end justify-between gap-4 p-5 border border-solid border-[#1D1D1D] flex flex-col gap-4 rounded-[20px] gap-3">
-        <div className="flex flex-col w-[10%]">
-          <h1 className="text-[25px] font-light text-white">Demographics</h1>
-          <Chart width={650} height={200} />
-        </div>
-        <div className="flex flex-col w-[100%] gap-3">
-          <ProgressBar color="#4834D4" index={0} country="India" value={40} />
-          <ProgressBar color="orange" index={1} country="USA" value={25} />
-          <ProgressBar color="yellow" index={2} country="CANADAA" value={10} />
-          <ProgressBar color="green" index={3} country="UAE" value={7} />
-        </div>
-      </div> */}
+      
       <Menu />
     </>
   );
