@@ -3,7 +3,7 @@ import Layout from "./Layout";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 import { Menu } from "./Body";
-import { FaLinkedinIn } from "react-icons/fa6";
+// import { FaLinkedinIn } from "react-icons/fa6";
 const Profile = () => {
   const tabs = [
     { name: "Overview" },
