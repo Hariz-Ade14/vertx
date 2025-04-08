@@ -73,7 +73,7 @@ const Profile = () => {
                   </div>
 
                   <div className="flex items-start md:items-center justify-start md:justify-start gap-1">
-                    <p className="text-gray-300 md:text-base leading-none text-[12px]">
+                    <p className="text-gray-300 md:text-base whitespace-nowrap leading-none text-[12px]">
                       Co-Founder & CEO @Vertx
                     </p>
                     <span className="inline-block bg-white w-4 h-4 rounded-sm flex items-center justify-center">
@@ -81,17 +81,14 @@ const Profile = () => {
                     </span>
                   </div>
 
-                  <div className="md:px-2 py-1 bg-white md:mt-2 w-[35%] md:w-[11.8%] text-black md:text-xs text-[9px] rounded-[4px]">
+                  <div className="md:px-2 px-1 py-1 bg-white md:mt-2 w-[35%] md:w-[11.8%] text-black md:text-xs text-[9px] rounded-[4px]">
                     <span className="">Entrepreneur</span>
                   </div>
                 </div>
 
                 <div className="flex md:w-full w-[40%] md:flex-col items-center md:items-start justify-between flex-row">
                   <div className="flex items-center justify-center md:justify-start gap-2 md:gap-4">
-                    <FaLinkedinIn
-                      size={30}
-                      className="bg-[#0077b5] p-1 rounded-[5px]"
-                    />
+                  <img src="/linkedin.png" className="md:w-9 md:h-9 h-7"/>
                     <Link to="#" className="bg-black p-2 rounded">
                       <svg
                         width="20"
@@ -106,7 +103,7 @@ const Profile = () => {
                         />
                       </svg>
                     </Link>
-                    <img src="/gmail.png" className="w-9 h-8" />
+                    <img src="/gmail.png" className="md:w-9 md:h-7 h-5"/>
                   </div>
                 </div>
               </div>
